@@ -14,25 +14,25 @@ module DCT_4Point(
 	);
 	
 	// DCT matrix data
-	reg signed [7:0] r_c00 = 8'h08; //0.5
-	reg signed [7:0] r_c01 = 8'h08; //0.5
-	reg signed [7:0] r_c02 = 8'h08; //0.5
-	reg signed [7:0] r_c03 = 8'h08; //0.5
+	reg signed [7:0] r_c00 = 8'h08;
+	reg signed [7:0] r_c01 = 8'h08;
+	reg signed [7:0] r_c02 = 8'h08;
+	reg signed [7:0] r_c03 = 8'h08;
 
-	reg signed [7:0] r_c10 = 8'h0A; //0.653
-	reg signed [7:0] r_c11 = 8'h04; //0.2705
-	reg signed [7:0] r_c12 = 8'hFC; //-0.2705
-	reg signed [7:0] r_c13 = 8'hF6; //-0.653
+	reg signed [7:0] r_c10 = 8'h0A;
+	reg signed [7:0] r_c11 = 8'h04;
+	reg signed [7:0] r_c12 = 8'hFC;
+	reg signed [7:0] r_c13 = 8'hF6;
  
-	reg signed [7:0] r_c20 = 8'h08; //0.5
-	reg signed [7:0] r_c21 = 8'hF8; //-0.5
-	reg signed [7:0] r_c22 = 8'hF8; //-0.5
-	reg signed [7:0] r_c23 = 8'h08; //0.5
+	reg signed [7:0] r_c20 = 8'h08;
+	reg signed [7:0] r_c21 = 8'hF8;
+	reg signed [7:0] r_c22 = 8'hF8;
+	reg signed [7:0] r_c23 = 8'h08;
 
-	reg signed [7:0] r_c30 = 8'h04; //0.2705
-	reg signed [7:0] r_c31 = 8'hF6; //-0.653
-	reg signed [7:0] r_c32 = 8'h0A; //0.653
-	reg signed [7:0] r_c33 = 8'hFC; //-0.2705
+	reg signed [7:0] r_c30 = 8'h04;
+	reg signed [7:0] r_c31 = 8'hF6;
+	reg signed [7:0] r_c32 = 8'h0A;
+	reg signed [7:0] r_c33 = 8'hFC;
 	
 	// Internal wires
 	wire signed [15 : 0] w_M00;
